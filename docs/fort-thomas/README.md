@@ -149,6 +149,33 @@ format and numbering system, approximate image sizes, independent backup
 destination, and whether the catalog must work when internet service is unavailable. A local network deployment can
 be designed for that requirement; any external services must be checked.
 
+
+## Institutional policy renewal
+
+The project also includes review and revision of the museum's mission and
+vision statements, collections management policy and collecting mandate.
+The user supplied an administration policy manual, draft articles of
+incorporation, and a combined bylaws and site-survey scan as foundational
+sources. Original documents remain in the project's source files; they are
+not published in this repository.
+
+Confirm document dates, adoption status, amendments and the museum's present
+governing authority before assigning decision rights. Preserve the distinction
+between source language, proposed revisions and formally adopted policy.
+
+Develop the mission and vision first, then define collecting scope and
+acquisition criteria. Address accessioning, provenance, documentation, archives
+and digital materials, access and rights, loans, care, movement, deaccessioning,
+emergency response, and policy review. Translate the agreed policies into
+catalog fields, roles, approval workflows, forms and reports. Proposed policy
+text does not become effective through a software commit.
+
+Maintain a decision register linking each proposed policy requirement to its
+source, approving authority, implementation and acceptance test. Use the
+American Alliance of Museums mission and collections stewardship guidance as
+professional reference points. Collection-wide cataloging should not outrun
+decisions about identifiers, ownership, archival arrangement and access.
+
 ## Validation so far
 
 The profile passes the bundled `profile.xsd` using Python lxml. Its base reference,
