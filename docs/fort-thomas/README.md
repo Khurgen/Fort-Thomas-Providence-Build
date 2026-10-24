@@ -11,11 +11,25 @@ shared application and database on a Linux server. Raspberry Pi workstations
 connect with a browser, using individual staff accounts. Do not install separate
 production catalogs on each workstation.
 
-A Pi 5 with SSD storage is a candidate pilot server, subject to measurement.
-Choose production hardware after representative media imports and concurrent
-cataloging tests. Prefer SSD storage for the database and media; do not rely on
-the operating-system microSD card as the only collection storage. Server model,
-RAM, storage capacity, network and power protection remain to be confirmed.
+Confirmed pilot hub: one Raspberry Pi 5 with 16 GB RAM and a 1 TB SSD.
+Two to four browser workstations are planned; their hardware will be selected
+later. Place the shared database and media on the SSD. Workstations use the
+same central catalog and do not need local copies of the collection.
+
+This is the selected pilot hardware, not a verified production capacity.
+Measure representative media imports and concurrent cataloging on the actual
+hub. Test two sessions initially and four simultaneous workstation sessions
+before completing rollout. Include a media upload during concurrent searches
+and edits, and record response times, failures, temperature and memory use.
+
+Size storage from actual files: original media plus generated derivatives,
+database, operating system, temporary processing space and free-space reserve.
+For illustration only, 7,500 objects with four 10 MB originals each require
+about 300 GB for those originals alone (decimal units). Larger scans, additional
+images, audio and video can change that estimate substantially. The 1 TB SSD
+does not provide an independent backup; confirm a separate backup destination
+and test restoration. Network, cooling, power protection, operating system and
+SSD connection/boot arrangement remain to be confirmed.
 
 Public online discovery is a later phase. Pawtucket2 is separate from this
 Providence project. No public catalog is configured by this change.
@@ -99,8 +113,10 @@ Before routine cataloging, demonstrate:
 - Multiple images per object, preserved originals and usable derivatives.
 - Search by identifier, title and descriptive terms, plus a usable export.
 - Location changes with dates and a retrievable history.
-- Two simultaneous staff sessions without lost edits, including a same-record
-  edit conflict test and a documented staff procedure for that case.
+- Two simultaneous staff sessions initially, expanding to four workstation
+  sessions before completing rollout. Include a media upload during searches
+  and edits, a same-record edit conflict test, and a documented staff procedure
+  for that case. Check for lost edits and record response times.
 - A cataloger who cannot administer users, and a reviewer who can approve work.
   These proposed roles are not provisioned by this XML.
 - Restricted objects and media remain inaccessible to unauthorized accounts.
@@ -126,10 +142,11 @@ been rehearsed. Preserve all source spreadsheets and original image files.
 
 ## Decisions needed next
 
-Confirm the intended server (Pi model/RAM or another Linux computer), SSD size,
-number of simultaneous catalogers, current catalog format and numbering system,
-approximate image sizes, existing backup destination, and whether the catalog
-must work when internet service is unavailable. A local network deployment can
+The pilot hub is confirmed as a Pi 5 with 16 GB RAM and a 1 TB SSD; two to four
+workstations are planned, with hardware selection deferred. Confirm the hub's
+current operating system, SSD connection and boot arrangement, current catalog
+format and numbering system, approximate image sizes, independent backup
+destination, and whether the catalog must work when internet service is unavailable. A local network deployment can
 be designed for that requirement; any external services must be checked.
 
 ## Validation so far
